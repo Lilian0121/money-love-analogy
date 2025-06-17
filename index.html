@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原来搞钱和搞对象，是如此相似？</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --text-color: #333;
+            --light-gray: #f9f9f9;
+            --border-color: #eaeaea;
+            --header-height: 60px;
+            --spacing: 1.5rem;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        
+        header {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            z-index: 100;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        
+        .header-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        main {
+            padding: var(--spacing) 0;
+        }
+        
+        h1, h2, h3 {
+            margin: 1.8rem 0 1rem;
+            line-height: 1.4;
+        }
+        
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-top: 0;
+            padding-top: var(--spacing);
+            color: #2c3e50;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            padding-left: 0.5rem;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: #34495e;
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+        }
+        
+        .highlight {
+            background-color: rgba(52, 152, 219, 0.1);
+            padding: 0 0.3rem;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .quote-box {
+            border-left: 3px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1.5rem 0;
+            background-color: white;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+        
+        .example-box {
+            background-color: rgba(46, 204, 113, 0.05);
+            padding: 1rem;
+            margin: 1.2rem 0;
+            border-radius: 6px;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: var(--border-color);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            background-color: var(--light-gray);
+            color: #555;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .share-btn:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .share-btn i {
+            margin-right: 5px;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            body {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">1788电台 | 职场与情感洞察</div>
+    </header>
+
+    <main>
+        <h1>原来搞钱和搞对象，是如此相似？</h1>
+        
+        <p style="text-align: center; color: #7f8c8d; font-size: 0.9rem; margin-bottom: 2rem;">从心理学角度解析工作与亲密关系的奇妙共性</p>
+        
+        <section class="section">
+            <h2>一、蜜月期：多巴胺驱动的完美滤镜</h2>
+            <p>当你第一天踏入新公司，精心打扮、提前到岗，对每个同事露出8K牙齿的微笑；当你第一次和约会对象见面，对方皱眉头都被你解读为"可爱的小习惯"——这就是"蜜月期"的魔力。</p>
+            
+            <div class="example-box">
+                <h3>心理学揭秘：多巴胺在搞鬼</h3>
+                <p>恋爱初期大脑会分泌大量多巴胺，让人感到愉悦兴奋；同理，进入新职场的新鲜感和对未来的期待，同样会刺激多巴胺分泌，让你在新环境中表现得格外积极。</p>
+            </div>
+            
+            <p>就像恋爱中对方不好笑的笑话你也会觉得"好有趣"，职场中你会把不会用打印机的小困难当成"新体验"——这都是多巴胺带来的"滤镜效应"。</p>
+        </section>
+        
+        <section class="section">
+            <h2>二、磨合期：当滤镜褪去后的"相爱相杀"</h2>
+            <p>工作三个月后，你发现"扁平化管理"其实是"老板一言堂"，"弹性工作制"变成24小时待命；恋爱同居后，对方袜子乱丢、打游戏不理人的习惯开始引发争吵——这就是"磨合期"的真实写照。</p>
+            
+            <div class="quote-box">
+                "晕轮效应"在此阶段逆转：曾经被美化的优点（如"随性"）如今变成缺点（"邋遢"），就像月亮的光环消失后，你看到了真实的瑕疵。
+            </div>
+            
+            <h3>职场与情场的共同矛盾</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <strong>职场</strong>：老板从"宽容新人"到"你来了这么久该做好了"的认知转变，暴露你的能力短板
+                </div>
+                <div class="timeline-item">
+                    <strong>情场</strong>：从"他皱眉好可爱"到"他怎么总是无理取闹"的心态变化，暴露性格磨合的挑战
+                </div>
+                <div class="timeline-item">
+                    <strong>共性</strong>：自我暴露理论——关系深入后，双方的短板（能力/性格）必然会显现
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>三、倦怠期：七年之痒的"边际效用递减"</h2>
+            <p>工作五年后，每天重复的任务让你只想"躺平摆烂"；恋爱七年，曾经说不完的话变成"吵架都懒得吵"——这就是"倦怠期"的典型症状。</p>
+            
+            <div class="example-box">
+                <h3>边际效用递减规律</h3>
+                <p>就像吃第十个面包时味同嚼蜡，重复的刺激会让大脑的满足感持续下降。记者工作11年后，会觉得"车祸现场都是同一个模式"，恋爱久了会觉得"约会像例行公事"。</p>
+            </div>
+            
+            <p>更有趣的是：当你动了辞职或分手的念头，对方的一举一动都会变得"不顺眼"——曾经觉得"随性"的袜子乱丢，现在变成"邋遢"；领导的鼓励从前是"关怀"，现在成了"画大饼"。</p>
+            
+            <p class="highlight">这是"证实偏差"在作祟：大脑会自动寻找"离开是正确选择"的证据，选择性忽略对方的好。</p>
+        </section>
+        
+        <section class="section">
+            <h2>四、破局之道：如何让关系长久保鲜</h2>
+            
+            <h3>1. 主动创造新鲜感</h3>
+            <p><strong>职场</strong>：学习新技能、申请轮岗、参与新项目，就像从记者转型做播客，用新挑战激活热情；</p>
+            <p><strong>情场</strong>：安排"逃离日常"的约会，比如在同一个城市住酒店、尝试新奇体验，用环境变化刺激感官。</p>
+            
+            <h3>2. 建立非暴力沟通机制</h3>
+            <div class="quote-box">
+                <strong>错误示范</strong>："你总是忘记纪念日，太自私了！"<br>
+                <strong>正确方式</strong>："纪念日没被记住时，我感到有点失落，因为这对我很重要。"
+            </div>
+            <p>职场中同理，和老板沟通压力时可以说："当前目标让我感到挑战，是否可以调整资源分配？"——用感受表达代替指责，更容易打开沟通渠道。</p>
+            
+            <h3>3. 用第三方视角理性评估</h3>
+            <p>当你想辞职或分手时，试试：</p>
+            <ul>
+                <li>以朋友身份写下"如果我的朋友遇到这种情况，我会建议..."</li>
+                <li>用表格列出这段关系的"获得"与"失去"，避免情绪化决策</li>
+            </ul>
+            <p>很多时候，你会发现问题并非不可解决，只是需要调整心态和相处模式。</p>
+        </section>
+        
+        <section class="section">
+            <h2>结语：搞钱和搞对象，都需要"用心经营"</h2>
+            <p>从心理学角度看，工作和恋爱遵循着相似的发展规律：蜜月期的激情、磨合期的碰撞、倦怠期的挑战，以及每个阶段都需要的"经营智慧"。</p>
+            <p>就像没有完美的恋人，也没有完美的工作。关键不是"找到对的人/工作"，而是学会在不完美中创造舒适的相处模式——这需要我们理解认知偏差、管理情绪周期，并持续提升自我调适能力。</p>
+            <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem;">愿你在搞钱路上找到价值，在搞对象途中收获幸福，用心经营，皆得圆满。</p>
+        </section>
+    </main>
+    
+    <div class="share-buttons">
+        <a href="#" class="share-btn" title="微信分享"><i>微信</i> 分享</a>
+        <a href="#" class="share-btn" title="朋友圈分享"><i>朋友圈</i> 分享</a>
+        <a href="#" class="share-btn" title="微博分享"><i>微博</i> 分享</a>
+        <a href="#" class="share-btn" title="复制链接"><i>复制链接</i></a>
+    </div>
+
+    <footer>
+        <p>本文整理自1788电台节目 | 2025年6月17日</p>
+    </footer>
+</body>
+</html>
